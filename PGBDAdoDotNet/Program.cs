@@ -47,12 +47,40 @@ namespace PGBDAdoDotNet
                 connection.Close();
             }
         }
+
+        static void DisplayArtist() {
+        
+            string connectionString = ChinookConnectionString;
+            using SqlConnection connection = new SqlConnection(connectionString);
+            connection.Open();
+
+            try
+            {
+                using var command = new SqlCommand("SELECT ArtistId, Name FROM Artist", connection);
+                using SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    int artistId = reader.GetInt32(0); // Assuming ArtistId is the first column
+                    string artistName = reader.GetString(1); // Assuming Name is the second column
+                    Console.WriteLine($"Artist ID: {artistId}, Name: {artistName}");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erreur lors de l'exécution de la requête : {ex.Message}");
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
         static void Main(string[] args)
         {
             //TestConnection(ChinookConnectionString);
             //TestConnection(NorthwindConnectionString);
-            int artistCount = ArtistCount();
-            Console.WriteLine($"Nombre d'artistes dans la base de données : {artistCount}");
+            //int artistCount = ArtistCount();
+            //Console.WriteLine($"Nombre d'artistes dans la base de données : {artistCount}");
+            DisplayArtist();
         }
 
     

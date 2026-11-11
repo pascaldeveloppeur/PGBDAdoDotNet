@@ -71,3 +71,4 @@ C:\Users\pasca\source\repos\PGBDAdoDotNet\PGBDAdoDotNet\bin\Debug\net10.0\System
 C:\Users\pasca\source\repos\PGBDAdoDotNet\PGBDAdoDotNet\bin\Debug\net10.0\System.Text.Encodings.Web.dll
 C:\Users\pasca\source\repos\PGBDAdoDotNet\PGBDAdoDotNet\bin\Debug\net10.0\System.Text.Json.dll
 C:\Users\pasca\source\repos\PGBDAdoDotNet\PGBDAdoDotNet\bin\Debug\net10.0\runtimes\browser\lib\net10.0\System.Text.Encodings.Web.dll
+C:\Users\pasca\source\repos\PGBDAdoDotNet\PGBDAdoDotNet\obj\Debug\net10.0\PGBDAdoDotNet.sourcelink.json

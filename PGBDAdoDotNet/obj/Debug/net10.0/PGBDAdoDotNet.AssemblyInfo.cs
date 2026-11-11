@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PGBDAdoDotNet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49e735e91cafb26bcf5aa9d6cd46ed0267858731")]
 [assembly: System.Reflection.AssemblyProductAttribute("PGBDAdoDotNet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PGBDAdoDotNet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
