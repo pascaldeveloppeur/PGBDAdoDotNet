@@ -60,8 +60,8 @@ namespace PGBDAdoDotNet
                 using SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    int artistId = reader.GetInt32(0); // Assuming ArtistId is the first column
-                    string artistName = reader.GetString(1); // Assuming Name is the second column
+                    int artistId = reader.GetInt32(0); 
+                    string artistName = reader.GetString(1); 
                     Console.WriteLine($"Artist ID: {artistId}, Name: {artistName}");
                 }
             }
